@@ -26,6 +26,8 @@ public interface BijouxService {
 	  List<Bijoux> findByMarqueIdCat(Long id); 
 	  List<Bijoux> findByOrderByNomBijouxAsc(); 
 	/*  List<Bijoux> trierBijouxNomsPrix(); */
+	  List<Marque> getAllMarque(); 
+
 
 
 }

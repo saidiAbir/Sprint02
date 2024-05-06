@@ -2,6 +2,7 @@ package com.abir.bijoux.service;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -10,10 +11,14 @@ import org.springframework.stereotype.Service;
 import com.abir.bijoux.entities.Bijoux;
 import com.abir.bijoux.entities.Marque;
 import com.abir.bijoux.repos.BijouxRepository;
+import com.abir.bijoux.repos.MarqueRepository;
 @Service
+
 public class BijouxServiceImpl implements BijouxService{
 	@Autowired
 	BijouxRepository bijouxRepository;
+	@Autowired
+	MarqueRepository marqueRepository; 
 
 	@Override
 	public Bijoux saveBijoux(Bijoux b) {
@@ -94,4 +99,8 @@ public class BijouxServiceImpl implements BijouxService{
 		return bijouxRepository.trierBijouxNomsPrix();
 	}*/
 
+	@Override 
+	 public List<Marque> getAllMarque() { 
+	  return marqueRepository.findAll(); 
+	 } 
 }

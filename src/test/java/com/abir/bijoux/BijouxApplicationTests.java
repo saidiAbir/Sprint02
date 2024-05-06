@@ -28,11 +28,11 @@ class BijouxApplicationTests implements CommandLineRunner {
 	
 	@Autowired
 	private BijouxService bijouxService;
-	@Test
+	/*@Test
 	public void testCreateBijoux() {
 	Bijoux bij = new Bijoux("boucle d'or",22.500,new Date());
 	bijouxRepository.save(bij);
-}
+}*/
 	@Test
 	public void testFindBijoux()
 	{

@@ -34,7 +34,8 @@ public interface BijouxRepository extends JpaRepository<Bijoux, Long> {
 	
 	/* @Query("select b from Bijoux b order by b.nomBijoux ASC, b.prixBijoux ASC")
 	 List<Bijoux> trierBijouxNomsPrix();*/
-
+	
+	
 
 
 
